@@ -906,7 +906,7 @@
     <!-- grafico_radial_2022 -->
     <script>
         var chart = document.querySelector('#chartpie2022')
-        var options = {
+        var options2022 = {
             series: [44, 55, 67, 83],
             chart: {
                 height: 350,
@@ -941,7 +941,7 @@
                             label: 'Respostas',
                             formatter: function(w) {
                                 // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
-                                return options.series.reduce((a, b) => a + b, 0) + "k";
+                                return options2022.series.reduce((a, b) => a + b, 0) + "k";
                             }
                         }
                     }
@@ -950,7 +950,7 @@
             labels: ['Agilidade', 'Gentileza', 'Atendimento', 'Comprometimento'],
             
         };
-        var chart = new ApexCharts(chart, options);
+        var chart = new ApexCharts(chart, options2022);
         chart.render();
     </script>
 
